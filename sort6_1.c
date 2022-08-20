@@ -25,11 +25,8 @@ void    sort6(char **str)
     k = 0;
     while (k < 6)
     {
-        if (k < 5)
-        {
-            while (strcmp(str[k], str[k + 1]) == 0)
-                k++;
-        }
+        while(k < 5 && strcmp(str[k], str[k + 1]) == 0)
+            k++;
         printf("%s\n", str[k]);
         k++;
     }

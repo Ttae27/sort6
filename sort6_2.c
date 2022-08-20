@@ -3,5 +3,5 @@
 
 int main()
 {
-    printf("%d\n", strcmp("ma", "ma"));
+    printf("%d", strcmp("hello", "world"));
 }
