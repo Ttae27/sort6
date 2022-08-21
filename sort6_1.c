@@ -30,6 +30,9 @@ void    sort6(char **str)
         printf("%s\n", str[k]);
         k++;
     }
+    for (int i = 0;i < 6;i++)
+        free(str[i]);
+    free(str);
 }
 
 int main()
